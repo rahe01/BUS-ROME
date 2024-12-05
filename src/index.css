@@ -9,3 +9,15 @@
 body{
     font-family: "Inter", sans-serif;
 }
+
+.bg-1{
+    background-color: #FAD502E0;
+}
+
+.bg-2{
+    background-color: #930B31;
+}
+
+.color-1{
+    color: #930B31;
+}

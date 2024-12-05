@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 const Ticket = () => {
     return (
         <div className="w-full px-4 lg:px-0 lg:w-2/3">
-            <div className="flex flex-col lg:flex-row items-center justify-center p-6 bg-gray-100 text-black gap-6 lg:gap-10 rounded-lg shadow-md">
+            <div className="flex flex-col lg:flex-row items-center justify-center p-6 bg-gray-200 text-black gap-6 lg:gap-10 rounded-lg shadow-md">
                 
                 {/* Select Bus Service */}
                 <div className="flex flex-col w-full lg:w-auto">
@@ -52,9 +52,9 @@ const Ticket = () => {
                 </div>
 
                 {/* Buy Tickets Button */}
-                <button className="w-full lg:w-auto mt-4 lg:mt-0 px-6 py-3 flex gap-2 items-center justify-center bg-[#930B31] text-white font-semibold rounded-md hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-600">
+               <div className="flex text-end"> <button className="w-full lg:w-auto  lg:mt-0 px-6 py-3 flex gap-2 items-center justify-center bg-[#930B31] text-white font-semibold rounded-md hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-600">
                     <FaSearch /> Buy Tickets
-                </button>
+                </button></div>
             </div>
         </div>
     );

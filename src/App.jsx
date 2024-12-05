@@ -10,29 +10,7 @@ import Card from "./Components/Services/Card";
 import Services from "./Components/Services/Services";
 
 const App = () => {
-  return (
-   <div>
-     <div className="container mx-auto">
-      <Navbar></Navbar>
-      <Hero></Hero>
-      <div className="block md:hidden">
-        <Ticket></Ticket>
-        <HeroBottom></HeroBottom>
-      </div>
-
-
-      <Work></Work>
-
-      <Services></Services>
-      <Banner></Banner>
-      <Contact></Contact>
-      
-
-
-    </div>
-    <Footer></Footer>
-   </div>
-  );
+ 
 };
 
 export default App;
