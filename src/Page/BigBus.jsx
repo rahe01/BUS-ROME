@@ -18,6 +18,11 @@ const BigBus = () => {
             });
     }, []);
 
+    // Function to handle ticket button click
+    const handleTicketClick = (index) => {
+        console.log("Ticket clicked at index:", index);
+    };
+
     return (
         <div className="container mx-auto">
             {/* Full-width responsive image */}
@@ -46,7 +51,7 @@ const BigBus = () => {
                 </div>
 
                 {/* Render tickets dynamically */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {tickets.map((ticket, index) => (
                         <TicketCard
                             key={index}
@@ -56,6 +61,7 @@ const BigBus = () => {
                             duration={ticket.duration}
                             ticketCount={ticket.ticket_count}
                             price={ticket.price}
+                            onClick={() => handleTicketClick(index)} // Pass the click handler
                         />
                     ))}
                 </div>

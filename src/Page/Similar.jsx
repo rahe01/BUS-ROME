@@ -17,6 +17,11 @@ const Similar = () => {
             });
     }, []);
 
+    // Handle button click and log the index
+    const handleButtonClick = (index) => {
+        console.log("Button clicked for package at index:", index);
+    };
+
     return (
         <section className="py-6 px-2 md:px-4 bg-gray-200">
             <h1 className="text-2xl font-bold mb-4 py-4">
@@ -35,6 +40,7 @@ const Similar = () => {
                             duration={packageData.duration}
                             ticketCount={packageData.ticket_count}
                             price={packageData.price}
+                            onClick={() => handleButtonClick(index)} // Pass the index to the handler
                         />
                     ))
                 ) : (

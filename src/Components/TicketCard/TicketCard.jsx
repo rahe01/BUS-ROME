@@ -2,7 +2,7 @@ import { FaRegClock } from "react-icons/fa6";
 import { LuTicket } from "react-icons/lu";
 import PropTypes from "prop-types";
 
-const TicketCard = ({ title, subtitle, image, duration, ticketCount, price }) => {
+const TicketCard = ({ title, subtitle, image, duration, ticketCount, price, onClick }) => {
     return (
         <div className="w-full mb-2 md:mb-14 md:w-72 mx-auto bg-3 rounded-xl shadow-md overflow-hidden border">
             {/* Image Section */}
@@ -46,7 +46,10 @@ const TicketCard = ({ title, subtitle, image, duration, ticketCount, price }) =>
                 </div>
 
                 {/* Button */}
-                <button className="w-full py-2 px-5 mt-3 text-white bg-2 md:rounded-lg rounded-3xl font-medium">
+                <button
+                    className="w-full py-2 px-5 mt-3 text-white bg-2 md:rounded-lg rounded-3xl font-medium"
+                    onClick={onClick} // Call the passed onClick handler
+                >
                     Buy Tickets
                 </button>
             </div>
@@ -61,6 +64,7 @@ TicketCard.propTypes = {
     duration: PropTypes.string.isRequired,
     ticketCount: PropTypes.number.isRequired,
     price: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired, // Add onClick as a required prop
 };
 
 export default TicketCard;
