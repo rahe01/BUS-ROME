@@ -1,12 +1,12 @@
 
 
-import Ticket from './../Components/Hero/Ticket';
+import Ticket from '../Components/Hero/Ticket';
 
-import Work from './../Components/How-Its-Work/Work';
-import Services from './../Components/Services/Services';
-import Banner from './../Components/Banner/Banner';
-import Contact from './../Components/Contact/Contact';
-import Hero from './../Components/Hero/Hero';
+import Work from '../Components/How-Its-Work/Work';
+import Services from '../Components/Services/Services';
+import Banner from '../Components/Banner/Banner';
+import Contact from '../Components/Contact/Contact';
+import Hero from '../Components/Hero/Hero';
 import HeroBottom from '../Components/Hero/HeroBottom';
 
 const Home = () => {

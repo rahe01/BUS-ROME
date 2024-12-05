@@ -1,6 +1,7 @@
 import { LuHome } from "react-icons/lu";
 import { PiTicketBold } from "react-icons/pi";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -38,7 +39,7 @@ const Navbar = () => {
 
                 <div className="navbar-end flex items-center space-x-4 lg:flex  md:w-full">
                     <ul className="menu menu-horizontal px-1 font-medium text-lg text-black hidden lg:flex">
-                        <li><a><LuHome /> Home</a></li>
+                       <Link to={"/bigbus"}> <li><a><LuHome /> Home</a></li></Link>
                         <li><a href=""><PiTicketBold /> Manage Bookings</a></li>
                         <li><a><MdOutlineLocationOn /> Agent Point</a></li>
                     </ul>
