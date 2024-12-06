@@ -23,13 +23,13 @@ const Similar = () => {
     };
 
     return (
-        <section className="py-6 px-2 md:px-4 bg-gray-200">
+        <section className="py-6 px-2 md:px-8 bg-gray-200 container mx-auto">
             <h1 className="text-2xl font-bold mb-4 py-4">
                 Explore Similar Packages
             </h1>
 
             {/* Display TicketCards */}
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 md:gap-x-10">
                 {similarPackages.length > 0 ? (
                     similarPackages.map((packageData, index) => (
                         <TicketCard

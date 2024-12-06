@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const TicketCard = ({ title, subtitle, image, duration, ticketCount, price, onClick }) => {
     return (
-        <div className="w-full mb-2 md:mb-14 md:w-72 mx-auto bg-3 rounded-xl shadow-md overflow-hidden border">
+        <div className="w-full mb-2 md:mb-14 mx-auto bg-3 rounded-xl shadow-md overflow-hidden border">
             {/* Image Section */}
             <img
                 src={image}
