@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import Main from '../Layouts/Main'
 import Home from '../Page/Home'
 import BigBus from '../Page/BigBus'
+import GreenLine from '../Page/GreenLine'
 
 
 
@@ -17,6 +18,10 @@ export const router = createBrowserRouter([
       {
         path: '/bigbus',
         element : <BigBus></BigBus>
+      },
+      {
+        path: '/greenLine',
+        element:<GreenLine></GreenLine>
       }
       
     ],
