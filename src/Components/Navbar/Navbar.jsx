@@ -39,7 +39,7 @@ const Navbar = () => {
 
                 <div className="navbar-end flex items-center space-x-4 lg:flex  md:w-full">
                     <ul className="menu menu-horizontal px-1 font-medium text-lg text-black hidden lg:flex">
-                       <Link to={"/greenLine"}> <li><a><LuHome /> Home</a></li></Link>
+                       <Link to={"/loveRome"}> <li><a><LuHome /> Home</a></li></Link>
                         <li><a href=""><PiTicketBold /> Manage Bookings</a></li>
                         <li><a><MdOutlineLocationOn /> Agent Point</a></li>
                     </ul>
